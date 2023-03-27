@@ -1,10 +1,10 @@
 const { Pool } = require('pg');
 
-const DATABASE_HOST = process.env.PGHOST || 'postgresql-gabyscript.alwaysdata.net';
-const DATABASE_USER = process.env.PGUSER || 'gabyscript_user';
-const DATABASE_PASSWORD = process.env.PGPASSWORD || 'desafio_likeme';
-const DATABASE_NAME = process.env.PGDATABASE || 'gabyscript_helena';
-const DATABASE_PORT = process.env.PGPORT || '5432';
+const DATABASE_HOST = process.env.PGHOST 
+const DATABASE_USER = process.env.PGUSER 
+const DATABASE_PASSWORD = process.env.PGPASSWORD
+const DATABASE_NAME = process.env.PGDATABASE
+const DATABASE_PORT = process.env.PGPORT 
 
 const pool = new Pool({
     host: DATABASE_HOST,
